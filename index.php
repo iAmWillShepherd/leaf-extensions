@@ -10,10 +10,11 @@ $blade = new Blade('views', 'storage/cache');
 $dc = new DevCycle();
 $os = new OneSignal();
 
-app()->get('/', function () use ($blade) {
+app()->get('/', function () use ($blade, $os) {
   echo DevCycle::ping();
   echo OneSignal::ping();
-  echo $blade->make('index', ['name' => 'DevCycle & OneSignal'])->render();
+  $apps = $os->viewApps();
+  echo $blade->make('index', ['name' => 'DevCycle & OneSignal', 'apps' => $apps])->render();
 });
 
 app()->run();

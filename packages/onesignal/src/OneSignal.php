@@ -26,6 +26,21 @@ class OneSignal
     );
   }
 
+  function viewApps()
+  {
+
+    $appArray = [];
+
+    foreach ($this->onesignalClient->getApps() as &$app) {
+      array_push($appArray,[$app['name'], $app['id']]);
+    }
+
+    return $appArray;
+  }
+
+
+
+
   public static function ping()
   {
     return "Pong!";

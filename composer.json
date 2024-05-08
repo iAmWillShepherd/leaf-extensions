@@ -15,7 +15,8 @@
     "leafs/fetch": "^0.1.0",
     "devcycle/php-server-sdk": "*",
     "vlucas/phpdotenv": "^5.6",
-    "devcycle/devcycle": "*"
+    "devcycle/devcycle": "*",
+    "leafs/form": "dev-main"
   },
   "autoload": {
     "psr-4": {
