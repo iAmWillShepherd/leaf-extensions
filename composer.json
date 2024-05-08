@@ -1,0 +1,27 @@
+{
+  "repositories": [
+    {
+      "type": "path",
+      "url": "packages/devcycle"
+    },
+    {
+      "type": "path",
+      "url": "packages/onesignal"
+    }
+  ],
+  "require": {
+    "leafs/leaf": "^3.0",
+    "leafs/blade": "^2.0",
+    "leafs/fetch": "^0.1.0",
+    "devcycle/php-server-sdk": "*",
+    "vlucas/phpdotenv": "^5.6",
+    "devcycle/devcycle": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "DevCycle\\": "packages/devcycle/src",
+      "OneSignal\\": "packages/onesignal/src"
+    }
+  },
+  "minimum-stability": "dev"
+}
