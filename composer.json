@@ -13,16 +13,11 @@
     "leafs/leaf": "^3.0",
     "leafs/blade": "^2.0",
     "leafs/fetch": "^0.1.0",
-    "devcycle/php-server-sdk": "*",
     "vlucas/phpdotenv": "^5.6",
-    "devcycle/devcycle": "*",
     "leafs/form": "dev-main"
   },
   "autoload": {
-    "psr-4": {
-      "DevCycle\\": "packages/devcycle/src",
-      "OneSignal\\": "packages/onesignal/src"
-    }
+    "psr-4": {}
   },
   "minimum-stability": "dev"
 }
