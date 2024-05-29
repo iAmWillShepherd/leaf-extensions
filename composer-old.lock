@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e5e966b8acfe4bb75c051f698eb7ec5",
+    "content-hash": "f48f24804d775130177d6bd83a880f14",
     "packages": [
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -79,23 +79,32 @@
         {
             "name": "devcycle/devcycle",
             "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "/Users/devcycle-andrew/Documents/GitHub/devcycle-leaf-plugin",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrewdmaclean/devcycle-leaf-plugin.git",
                 "reference": "eb5f62db4befc20c4131a525e60424b8e92716dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrewdmaclean/devcycle-leaf-plugin/zipball/eb5f62db4befc20c4131a525e60424b8e92716dd",
+                "reference": "eb5f62db4befc20c4131a525e60424b8e92716dd",
+                "shasum": ""
             },
             "require": {
                 "devcycle/php-server-sdk": "*"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "DevCycle\\": "src"
                 }
             },
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "source": "https://github.com/andrewdmaclean/devcycle-leaf-plugin/tree/main",
+                "issues": "https://github.com/andrewdmaclean/devcycle-leaf-plugin/issues"
+            },
+            "time": "2024-05-22T21:31:10+00:00"
         },
         {
             "name": "devcycle/php-server-sdk",
@@ -1933,6 +1942,90 @@
             "time": "2024-02-05T13:50:32+00:00"
         },
         {
+            "name": "onesignal/onesignal-leaf",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OneSignalDevelopers/onesignal-leaf-plugin.git",
+                "reference": "57dd09cd0405b5239e2f154ab67a4732f99230ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OneSignalDevelopers/onesignal-leaf-plugin/zipball/57dd09cd0405b5239e2f154ab67a4732f99230ec",
+                "reference": "57dd09cd0405b5239e2f154ab67a4732f99230ec",
+                "shasum": ""
+            },
+            "require": {
+                "onesignal/onesignal-php-api": "*@dev"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OneSignal\\": "src"
+                }
+            },
+            "support": {
+                "source": "https://github.com/OneSignalDevelopers/onesignal-leaf-plugin/tree/main",
+                "issues": "https://github.com/OneSignalDevelopers/onesignal-leaf-plugin/issues"
+            },
+            "time": "2024-05-22T21:56:10+00:00"
+        },
+        {
+            "name": "onesignal/onesignal-php-api",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OneSignal/onesignal-php-api.git",
+                "reference": "325c42a2a2d19733391d9a638823ef051cbacc51"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OneSignal/onesignal-php-api/zipball/325c42a2a2d19733391d9a638823ef051cbacc51",
+                "reference": "325c42a2a2d19733391d9a638823ef051cbacc51",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^7.3",
+                "guzzlehttp/psr7": "^1.7 || ^2.0",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.5"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "onesignal\\client\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "OneSignal developers",
+                    "homepage": "https://onesignal.com"
+                }
+            ],
+            "description": "A powerful way to send personalized messages at scale and build effective customer engagement strategies. Learn more at onesignal.com",
+            "homepage": "https://onesignal.com",
+            "keywords": [
+                "api",
+                "onesignal",
+                "php",
+                "rest",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/OneSignal/onesignal-php-api/issues",
+                "source": "https://github.com/OneSignal/onesignal-php-api/tree/main"
+            },
+            "time": "2023-08-02T00:01:45+00:00"
+        },
+        {
             "name": "open-feature/sdk",
             "version": "2.0.7",
             "source": {
@@ -3211,6 +3304,7 @@
     "stability-flags": {
         "leafs/form": 20,
         "devcycle/devcycle": 20,
+        "onesignal/onesignal-leaf": 20,
         "vlucas/phpdotenv": 20
     },
     "prefer-stable": false,
