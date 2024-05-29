@@ -2,19 +2,11 @@
 <html>
 
 <head>
-  <title>{{ $name }}</title>
+    <title>{{ $name }}</title>
 </head>
 
 <body>
-  <div class="container">{{ $name }}</div>
-  <form id="submit">
-    <select id="appId">
-      @foreach($apps as $app)
-        <option value="{{ $app[1] }}">{{ $app[0] }}</option>
-      @endforeach
-    </select>
-    <button type="submit">Submit</button>
-</form>
+    <div class="container">{{ $name }}</div>
 </body>
 
 </html>

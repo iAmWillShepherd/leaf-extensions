@@ -1,12 +1,8 @@
 {
   "repositories": [
     {
-      "type": "vcs",
-      "url": "https://github.com/oneSignalDevelopers/onesignal-leaf-plugin"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/iAmWillShepherd/devcycle-leaf-plugin"
+      "type": "path",
+      "url": "/Users/devcycle-andrew/Documents/GitHub/devcycle-leaf-plugin"
     }
   ],
   "require": {
@@ -15,8 +11,12 @@
     "leafs/fetch": "^0.1.0",
     "leafs/form": "dev-main",
     "devcycle/devcycle": "dev-main",
-    "onesignal/onesignal-leaf": "dev-main",
     "vlucas/phpdotenv": "^5.6@dev"
   },
-  "minimum-stability": "dev"
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "DevCycle\\": "/Users/devcycle-andrew/Documents/GitHub/devcycle-leaf-plugin/src"
+    }
+  }
 }
